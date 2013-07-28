@@ -43,11 +43,3 @@ end
 EM.run do
   EM.start_server '0.0.0.0', 10000, SPDYHandler
 end
-
-# (1) start the SPDY eventmachine server
-# > ruby spdy_server.rb
-#
-# (2) start Chrome and force it to use SPDY over SSL.. on OSX:
-# > /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --use-spdy=ssl
-#
-# (3) visit https://localhost:10000/
